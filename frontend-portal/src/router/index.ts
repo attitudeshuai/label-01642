@@ -59,6 +59,7 @@ const router = createRouter({
 router.beforeEach((to, _from, next) => {
   const title = to.meta.title as string
   document.title = title ? `${title} - 门户网站` : '门户网站'
+  
   next()
 })
 
